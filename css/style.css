@@ -204,31 +204,63 @@ body, html {
     padding-left: 10%;
     padding-right: 10%;
   }
+  .twoimg {
+    height: 100%
+  }
+  .two {
+    padding-top: 20%;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .mainimage {
-    height: 70%;
+    height: 60%;
   }
   .one .row {
     padding-left: 1%;
     padding-right: 1%;
   }
   .landing img {
-    width: 70%;
+    width: 50%;
   }
   .landing h2 {
-    padding-top: 40%;
-    font-size: 76px;
+    padding-top: 20%;
+    font-size: 67px;
   }
   .menu img {
     padding: 0 0 0 15%;
     width: 150px;
     float:left;
   }
+  .twoimg {
+    height: 90%;
+  }
+  .two {
+    text-align: center;
+    padding: 50% 0 0 0;
+  }
 }
 @media only screen and (max-width: 768px) {
+  .menu {
+    font-size: 1.8em;
+  }
+  .one .row {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .twoimg {
+    height: 80%;
+  }
+}
+@media only screen and (max-width: 640px) {
   .mainimage {
-    height: 40%
+    height: auto;
+  }
+  .landing h2 {
+    z-index: 1;
+    text-align: center;
+  }
+  .landing img {
+    z-index: 2;
   }
   .menu {
     font-size: 1.8em;
@@ -237,5 +269,10 @@ body, html {
     padding-left: 3%;
     padding-right: 3%;
   }
-  .twoimg {}
+  .twoimg {
+    height: 80%;
+  }
+  .one .column3 {
+    width: 100%;
+  }
 }
