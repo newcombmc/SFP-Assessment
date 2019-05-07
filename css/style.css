@@ -1,0 +1,241 @@
+/*
+  Author: Michael Newcomb
+  Project: SFP Assessment
+*/
+/* Global Styles */
+body, html {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: Lato, sans-serif;
+}
+.bold {
+  font-weight: 900;
+}
+.reg {
+  font-weight: 400;
+}
+.light {
+  font-weight: 300;
+}
+.lighter {
+  font-weight: 200;
+}
+.thin {
+  font-weight: 100;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+.column3{
+  float: left;
+  width: 33.3%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Header Styles */
+.mainimage {
+  height: 95%;
+  background-image: url("../images/iStock-617907442.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menu {
+  background: rgba(0,45,59,0.5);
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 0 20px 0;
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 20%;
+  overflow: hidden;
+}
+.menu img {
+  padding: 0 0 0 20%;
+  width: 150px;
+  float:left;
+}
+.menu li {
+  float:left;
+}
+.menu a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+.menu a:hover {
+  transform: scale(1.1);
+}
+/* Landing Styles */
+.landing {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.landing h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 56px;
+  padding-top: 18%;
+  padding-left: 10%;
+}
+.landing img {
+  padding-left: 30%;
+  padding-top: 10%;
+  width: 40%;
+}
+/* Section One Styles */
+.one {
+  text-align: center;
+}
+.one h3 {
+  padding-top: 100px;
+  font-size: 84px;
+  text-transform: uppercase;
+  padding: 100px 0 10px 0;
+  margin: 0;
+}
+.one .row {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 30px;
+}
+.one .column3 {
+  display: block;
+  margin: auto;
+  width: 30%;
+  padding-left: 3%;
+}
+.one h5 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.one p {
+  font-weight: 300;
+  line-height: 1;
+}
+.one img {
+  object-fit: cover;
+  padding-top: 50px;
+  height: 350px;
+  width: 100%;
+}
+.one .down {
+  padding-top: 100px;
+}
+.textcontainer {
+  position: relative;
+  text-align: left;
+}
+.overlaytext .title {
+  font-size: 18px;
+  font-weight: 400;
+}
+.overlaytext {
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  padding-left: 15px;
+  padding-right: 50px;
+  font-size: 12px;
+  font-weight: 300;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.6), rgba(0,0,0,1));;
+}
+.smalldate {
+  font-size: 0.8em;
+}
+.oneone img {
+  width: 100px;
+  height: 100px;
+}
+.one h3 {
+  line-height: 1;
+}
+/* Section Two Styles */
+.twoimg {
+  background:linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.25), rgba(0,0,0,0.8)),url(../images/iStock-984199180.jpg);
+  height: 120%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.two {
+  text-transform: uppercase;
+  text-align: right;
+  padding-right: 20%;
+  padding-top: 35%;
+  color: white;
+  font-size: 120px;
+  line-height: 0;
+}
+.two .line {
+  font-size: 70px;;
+  text-decoration: none;
+}
+.two a{
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+  border: 1px solid white;
+  padding: 20px 30px;
+  margin: auto;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 1366px) {
+  .mainimage {
+    height: 90%;
+  }
+  .menu ul{
+    padding-left: 10px;
+  }
+  .one .row {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .mainimage {
+    height: 70%;
+  }
+  .one .row {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .landing img {
+    width: 70%;
+  }
+  .landing h2 {
+    padding-top: 40%;
+    font-size: 76px;
+  }
+  .menu img {
+    padding: 0 0 0 15%;
+    width: 150px;
+    float:left;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mainimage {
+    height: 40%
+  }
+  .menu {
+    font-size: 1.8em;
+  }
+  .one .row {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .twoimg {}
+}
